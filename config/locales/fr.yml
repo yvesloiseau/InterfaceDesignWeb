@@ -19,12 +19,12 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+fr:
   copyright: "2018 Interface Design Web"
-  hello: "Welcome to my site"
-  about_page_title: "About"
+  hello: "Bienvenue sur mon site"
+  about_page_title: "A propos"
   contact_page_title: "Contact"
-  mywork_page_title: "My work"
+  mywork_page_title: "Mes travaux"
   articles_page_title: "Articles"
   promotion_page_title: "Promotions"
   about_path: "about"
@@ -32,22 +32,22 @@ en:
   mywork_path: "mywork"
   articles_path: "articles"
   promotion_path: "promotion"
-  social_network: "Social network links"
+  social_network: "Réseaux sociaux"
   conception: "Conception Interface Design Web"
   yves_loiseau: "Yves Loiseau"
-  nom_tag: "Name"
-  nom_placeholder: "Write your name here"
-  email_tag: "Email"
-  email_placeholder: "Write your email"
-  phone_tag: "Phone number"
-  phone_placeholder: "Write your phone number"
+  nom_tag: "Nom"
+  nom_placeholder: "Écrivez votre nom ici"
+  email_tag: "Courriel"
+  email_placeholder: "Écrivez votre adresse courriel"
+  phone_tag: "Téléphone"
+  phone_placeholder: "Écrivez votre téléphone"
   message_tag: "Message"
-  message_placeholder: "Write your message"
-  submit_placeholder: "Send"
+  message_placeholder: "Écrivez votre message"
+  submit_placeholder: "Envoyer"
   pages:
     index:
-      welcome: "Welcome to my WEB site"
-      more_details: "To find more details about me, visit the About and Contact pages"
+      welcome: "Bienvenue sur mon site WEB"
+      more_details: "Pour plus de détails, consulter les pages A propos et Contact"
     about:
       federation: "Membre de la Fédération québécoise des massothérapeutes agréés (FQM)"
     mywork:

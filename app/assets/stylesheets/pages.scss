@@ -1,0 +1,721 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$font-stack:    "Helvetica Neue";
+//Helvetica,Arial,sans-serif;
+$primary-color: #333;
+
+html, body {
+    font-size: 16px;
+}
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  width: 100%;
+  margin: 0;
+}
+
+#cover {
+//  background: url('/assets/interfaceDesignWeb_Landing_Image_V2.jpg');
+  background: url('/assets/White_Photo.jpg');
+//  background: url('/assets/interfaceDesignWeb_Landing_Image_V2.jpg');
+//  background: url('/assets/interfaceDesignWeb_Landing_Image_V2.jpg');
+  width: 100%;
+  height: 513px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+a.language {
+  float: right;
+}
+
+.bigger, .ok {
+color: red;
+margin-top: 100px;
+padding-left: 50px;
+}
+
+.bigger {
+  font-size: 24px;
+}
+
+
+// ******************************************************
+// *  Static pages styling                              *
+// ******************************************************
+
+.main-image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+
+.img-two {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-Yves {
+  width: 350x;
+  height: 466px;
+  border-radius: 50%;
+//  margin-top: 25px;
+//  margin-bottom: 25px
+}
+
+.skills {
+//  background-color: #dcc097;
+  color: #333;
+  padding-left: 25px;
+//  padding-top: 10px;
+  padding-bottom: 5
+  0px;
+}
+
+.skills h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-header  {
+  display: inline-block;
+  width: 100%; // 55.55555556%;  // 800px;
+  height: auto;
+}
+
+.contact-email  {
+//  display: inline-block;
+  width: 100%; // 34.72222222%;  // 500px;
+  height: auto;
+}
+
+.my-background  {
+  width: 90%;  // 55.55555556%;  // 800px;
+  height: auto;
+}
+
+.more-info  {
+  width: 100%; //34.72222222%;  // 500px;
+  height: auto;
+}
+
+.contact-page-indent {
+  padding-left: 15px;
+}
+
+p, ol, ul, td {
+  margin:0;
+}
+
+.indent-right {
+  float: right;
+  padding-top: 20px;
+  margin-bottom: 200px;
+  color: white;
+}
+
+#skill-list { margin-left: 30px }
+
+// ******************************************************
+// *  Start of modal rules                              *
+// ******************************************************
+/* Modal windows styling rules */
+.modalWindow {
+  float: right;
+  padding: 15px;
+}
+
+.modal-Passions {
+//  margin-top: 1.785714286em; //*25px;*/
+//  margin-left: 1.736111111%; //*25px;*/
+  // width: 41.66666667%;     //*/
+  // 600px; //*/
+  height: 35.71428571em;   //* 500px; */
+  //position: absolute;
+  //top: 0;
+  //left: 150;
+}
+
+div.custombox-modal.custombox-modal-fadein {
+    //width: 400px; */
+  //margin: 0 auto;
+  //border-radius: 0.714285714em; /*10px;*/
+  //width: 400px;
+    //width: 27.77777778%;  */
+    // 400px; */
+  //background-color: yellow;*/
+}
+
+div.modal-Passions.modal-content,
+div.modal-Goals.modal-content {
+    //max-width: 50%;*/
+  //height: auto;
+    //left: -125%;
+}
+
+div.custombox-modal.custombox-modal-newspaper {
+  //width: 400px;
+  //margin: 0 auto;
+  //border-radius: 10px;
+    //left: -50%;*/
+}
+
+.passionHeader {
+  //position: relative;
+  //margin-left: auto;
+  //margin-right: auto;
+  //width: 50%; //*22.22222222%;    200px;*/
+}
+
+.passionFamily { clear: both;
+  //padding: 2.5%;  /*10px; */
+}
+
+.passionHeader {
+  color: #1158dc;
+  font-weight: bold;
+  text-align: center;
+}
+button#butPassionsClose.close.cvexit {
+  text-align: right;
+  color: black; /*#f5f5f5;*/
+  text-align:center;
+  text-decoration:none;
+  /*box-shadow: 0 0 3px gray;*/
+  font-weight:bold;
+}
+
+button#buttonCVImbedClose.close.cvexit:hover,
+button#butGoalClose.close.cvexit:hover,
+button#butPassionsClose.close.cvexit:hover {
+  top: 3px;
+  background-color: red; /* #1158dc; blue;*/
+  color: white;
+  border-radius: 35%;
+  opacity: 1;
+}
+.modal-Goals,
+.modal-career,
+.modal-Passions { background-color: white; }
+
+
+  div.modal-Passions.modal-content,
+  div.modal-Goals.modal-content {
+     //max-width: 50%;*/
+    //height: auto;
+    //left: -75%;
+      //margin:0 auto;*/
+      //position:relative; */
+      //left: -50%;*/
+      //margin-right: auto;*/
+  }
+
+    div.modal-dialog.modal-sm {
+    top: -30%;
+    left: -25%;
+      //width: 75%;*/
+  }
+
+//  End of modal rules
+// ******************************************************
+// * My work css                                        *
+// ******************************************************
+.industry_title {
+  position: relative;
+  margin-top: 3.789314%;  /* 50 / 1319,5)*/
+  z-index: 11;
+}
+
+.myWorkTitle {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  height: 3.789314%;
+  width: 69.444444%;  /*17em;*/
+}
+
+.industry_title {
+  position: relative;
+  margin-top: 3.789314%;  /* 50 / 1319,5)*/
+  z-index: 11;
+}
+
+.my_work_image {
+  position: relative;  /*  relative;  */
+  z-index: 11;
+  visibility:visible;
+  max-width: 100%;
+  height: 25%;     /* (25+441) / 1319.50 = 33.421751% */
+  /*max-height: 100%;*/
+}
+
+img.project_mgt_image {
+    margin-bottom:   1.515726%;  /* 20px;  / 139.50 */
+    visibility:visible;
+    z-index: 11;
+}
+
+img.project_mgt_image:hover {
+    /*transform: rotatex(-90deg) translatez(136px);*/
+  transform: rotate(180deg);
+  opacity: 0;
+  z-index: 9;
+  /*visibility: hidden;*/
+}
+
+img.my-image:hover {
+    /*transform: rotate(180deg);*/
+}
+
+p .hidden {
+  opacity: 0;
+}
+
+  /*   TESTS for the my_work container size */
+ .my_content {
+    position: relative;
+    /*top: -100px;*/
+    /*height: 25%;   409  / 826 */
+    /*max-height:100%;*/
+    /*width: 160px;*/
+    max-width: 100%;
+    padding-bottom:10%;
+    overflow: hidden;
+ }
+
+div#mywork.container-fluid.work.anchorwork {
+  padding-left: 0.347222222%; /*  5px; / 1440 */
+  padding-top: 3.571428571em;  /*50px  / 14 */
+}
+
+.my_work_text {
+  background-color: #005082;
+  color:white;
+  /*transform: rotatex(-90deg) translatez(93px);*/
+  /*transform: rotatex(-90deg) translatez(136px);*/
+}
+
+.my_work_text p {
+  color:white;
+  font-size: 1em;
+  }
+
+.caption {
+  color: #0000CC;
+  font-size: 125%; /*20px;*/
+}
+
+.caption2 {
+  color: #0000CC;
+  font-size: 125%; /* 1.5em; 1.285em;18px;*/
+}
+
+.myWorkTitle {
+  color: blue;
+}
+
+div#mywork.container-fluid.work.anchorwork,
+div#faq.container-fluid.faqclass.anchorfaq { background-color: white; }
+
+
+// ******************************************************
+// *  End of my work css rules                          *
+// ******************************************************
+
+// ******************************************************
+// *  Anchor tags and pages height                      *
+// ******************************************************
+.anchor-about {
+  padding-top: 0px; //80px;
+  }
+
+.anchor-contact {
+  padding-top: 0px;
+  padding-left: 1em;
+  padding-right: 0px;
+  }
+
+.anchor-index {
+  padding-top: 0px;
+  }
+
+div#index.container-fluid.anchor-index {
+  height: 820px;
+  height: auto;
+  //max-width: 100%;
+  //max-height: 100%;
+  }
+
+div#about.container-fluid.work.anchor-about {
+  height: 1690px;
+  height: auto;
+//  max-width: 100%;
+//  max-height: 100%;
+  }
+
+div#contactus.container-fluid.anchor-contact {
+  height: 700px;
+  height: auto;
+//  max-width: 100%;
+//  max-height: 100%;
+  }
+
+.thankyou-popup {
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  padding-top: 5px;  //*30px;*/
+  padding-left: 1em; //*12px;*/
+  padding-bottom: 10px;
+  margin-top: 120px;
+  margin-left: 100px;
+ // padding-right: 0px;
+  height: 300px;
+  height: auto;
+  max-width: 40%;
+ // max-height: 100%;
+
+}
+
+.thankyou-button {
+  margin-left: 10px;
+}
+
+// *****************************************************
+// *  Footer section rules                             *
+// *****************************************************
+
+.social-links li {
+  margin-right: 10px;
+  font-size: 20px;
+  list-style-type: none;
+  text-align: center;
+  display: inline;
+}
+
+footer {
+  clear: both;
+  width:100%;
+  max-width: 100%;
+  margin-right:auto;
+  margin-left:auto;
+  padding:8px;
+  height:125px;
+  font-size: 22px;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+ul.social-links {
+  padding: 0;
+}
+
+// ******************************************************
+// *  Contacts Us page and form styling                 *
+// ******************************************************
+// Rules for lesson 5.3 - Sending emails
+
+.name-contactUs-form {
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+.message-contactUs-form {
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+.alert {
+  margin-top: 80px;
+  margin-bottom: 5px;
+}
+
+// ******************************************************
+// *  Topographic rules                                 *
+// ******************************************************
+
+
+h1,
+h2,
+h3 { font-family: Futura, Helvetica, Arial, sans-serif; }
+
+h1,h2 {
+  color: #5535D2; // #1158dc;
+}
+
+p {
+  //font-size: 14px;
+}
+
+.intro p {
+  font-family: Futura, sans-serif;
+  font-size: 20px; /* 20px; 1.5em; */
+  font-weight: 100;
+  -webkit-margin-before: 0em;
+}
+
+.skills {
+  font-weight: 500;
+  }
+
+#golfInfo + .tooltip.top .tooltip-inner {
+    background-color:blue;
+}
+#golfInfo + .tooltip.top .tooltip-arrow {
+      border-top-color: blue;
+}
+
+.email-bold {
+  color: #5535D2;
+}
+
+footer,
+footer h3 {
+  color: #254451 //#264553;
+}
+
+footer a {
+  color: #264553; //white;
+}
+
+footer {
+  background-color: #9d9d9d; //#264553; grey;  #101010; #809af3;
+}
+
+.alert {
+  font-size: 20px;
+  font-weight: 900;
+  color: red;
+}
+
+
+/*****************************************************/
+/*  Min-width = 1400px                               */
+/*****************************************************/
+@media (min-width: 768px) and (max-width: 1400px) {
+  .navbar-collapse.collapse {
+        display: none !important;
+  }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+
+    .navbar-header {
+        float:none;
+    }
+
+   div.project_name.navbar-brand {
+      padding-top: 5px !important;
+      padding-bottom: 10px;
+     //margin-bottom: 5px;
+    }
+}
+
+/*****************************************************/
+/*  Max-width = 1200px (.76 factor)                  */
+/*****************************************************/
+@media (max-width: 1200px) {
+
+  .bag-caroussel {
+    width: 26.59574468%;   //375px; base is 1410px
+    height: auto;
+  }
+
+  div.carousel-inner {
+    height: auto; //41.25em; //66em; //660px; base at 10px
+  }
+
+  h1.h1-products {
+    width: 90%;
+    font-size: 1.666666667em; // 2em;
+  }
+
+  h3.landpage-product-name {
+    width: 35%;
+    font-size: 1.25em; // 1.17em;
+  }
+
+  h4.landpage-product-description {
+    width: 95%;
+    font-size: 1.041666667em; // 1.17em;
+  }
+
+  h3.landpage-product-price {
+    width: 95%;
+    font-size: 1.25em; // 1.5em;
+  }
+
+  h3.landpage-special-price {
+    font-size: 1.666666667em; // 2em;
+  }
+
+  .carousel-caption {
+  width: 80%;
+  }
+
+}
+
+/*****************************************************/
+/*  Max-width = 979px                                */
+/*****************************************************/
+@media (max-width: 979px) {
+
+  h1.h1-products {
+    width: 90%;
+    font-size: 1.359722222em; // 1.666666667em;
+  }
+
+  h3.landpage-product-name {
+    width: 35%;
+    font-size: 1.019791667em; // 1.25em;
+  }
+
+  h4.landpage-product-description {
+    width: 95%;
+    font-size: 0.849826389em; // 1.041666667em;
+  }
+
+  h3.landpage-product-price {
+    width: 95%;
+    font-size: 1.019791667em; // 1.25em;
+  }
+
+  h3.landpage-special-price {
+    font-size: 1.359722222em; // 1.666666667em;
+  }
+
+  .carousel-caption {
+  width: 80%;
+  }
+}
+
+/*****************************************************/
+/*  Min-width = 767px                                */
+/*****************************************************/
+@media (max-width: 767px) {
+
+  h1.h1-products {
+    width: 70%;
+    font-size: 1.066666667em; // 1.359722222em;
+  }
+
+  h3.landpage-product-name {
+    width: 35%;
+    font-size: 0.8em; // 1.019791667em;
+  }
+
+  h4.landpage-product-description {
+    width: 95%;
+    font-size: 0.666666667em; // 0.849826389em;
+  }
+
+  h3.landpage-product-price {
+    width: 95%;
+    font-size: 0.8em; // 1.019791667em;
+  }
+
+  h3.landpage-special-price {
+    font-size: 1.066666667em; // 1.359722222em;
+  }
+
+  .carousel-caption {
+  width: 80%;
+  }
+}
+
+/*****************************************************/
+/*  Min-width = 700px                               */
+/*****************************************************/
+@media (min-width: 700px) {
+  .rwd-line {
+    display: inline;
+  }
+}
+
+/*****************************************************/
+/*  Max-width = 480px                                */
+/*****************************************************/
+@media (max-width: 480px) {
+
+  div#index.container-fluid.anchor-index {
+  //  height: 820px;
+    padding-top: 50px;
+  }
+
+  div#about.container-fluid.work.anchor-about {
+//  height: 690px;
+    padding-top: 50px;
+  }
+
+  div#contactus.container-fluid.anchor-contact {
+//    height: 700px;
+    padding-top: 50px;
+  }
+}
+
+/*****************************************************/
+/*  Max-width = 467px                                */
+/*****************************************************/
+@media (max-width: 467px) {
+
+  h1.h1-products {
+    width: 70%;
+    font-size: 1.066666667em; // 1.359722222em;
+  }
+
+  h3.landpage-product-name {
+    width: 35%;
+    font-size: 0.8em; // 1.019791667em;
+  }
+
+  h4.landpage-product-description {
+    width: 95%;
+    font-size: 0.666666667em; // 0.849826389em;
+  }
+
+  h3.landpage-product-price {
+    width: 95%;
+    font-size: 0.8em; // 1.019791667em;
+  }
+
+  h3.landpage-special-price {
+    font-size: 1.066666667em; // 1.359722222em;
+  }
+
+  .carousel-caption {
+  width: 80%;
+  }
+}
+
+/*****************************************************/
+/*  END OF MEDIA RULES                               */
+/*****************************************************/
+
+//  My logos colors:
+// #254553 or #254451
+// #b2d235 or b3d043
+
+// Other colors
+// #707070
+// #99cc00;
+// #fff
+
+

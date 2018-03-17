@@ -13,4 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery-readyselector
+//= site
+//= MyPassions
+//= MyPassions_Close
+//= custombox
+//= custombox.min
 //= require_tree .

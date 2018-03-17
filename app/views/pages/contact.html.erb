@@ -1,0 +1,37 @@
+<h1>Pages#contact</h1>
+<p>Find me in app/views/pages/contact.html.erb</p>
+<p class="bigger <%= action_name == "contact" ? 'ok' : 'notok' %>">This is a test on ading a class</p>
+<p>This is the action: <%= @action_name %></p>
+<p><%= controller_name %>  ---   <%= action_name%></p>
+
+<%= link_to "Open modal", "#my-modal", :class => "btn", "data-toggle" => "modal" %>
+
+<%= link_to "Open new modal", contact_path, :class => "btn", :remote => true, "data-toggle" => "modal", "data-target" => "#my-modal" %>
+
+
+<div class="modal hide fade" id="my-modal" title="My modal">
+  <div class="modal-header">
+    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+    <h3 id="myModalLabel">Modal header</h3>
+              <p class="passionFamily">
+            My wife and daughters are the most precious in my life<br>
+            Golf comes after that<br>
+            Wine is a good complement to everything<br>
+            Cycling for a nice ride in the country and to keep in shape<br>
+            </p>
+  </div>
+  <div class="modal-body">
+            <h2 class"cvresume">Golf</h2>
+            <p class="cvcontent">Season is always too short<br>
+              Summer is too short!!<br>
+              Love to play everywhere, trying different courses adds to the challenge.
+            <br>
+              Love competitions with friends, just for the fun of it, no bets or nothing.
+            <br>
+              Can't wait for the season to start!!
+
+  </div>
+  <div class="modal-footer">
+    <button aria-hidden="true" class="btn" data-dismiss="modal">Close</button>
+  </div>
+</div>

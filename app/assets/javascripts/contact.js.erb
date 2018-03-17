@@ -1,0 +1,214 @@
+$(document).on('turbolinks:load', function() {
+// FOR loop section
+  for (var i = 0; i < thisWork.length; ++i) {
+            if (i === 0) {
+                console.log("= 0");
+                $('#workTech').append('\
+                <div class="col-xs-6 col-sm-3 col-md-3 over_boot">\
+                    <div class="my_work_image">\
+                      <figure>\
+                    <%= image_tag("' + thisWork[i] + '", size: "400x250",\
+                      alt: "Edit Entry", class: "work-img project_mgt_image img-responsive")%>\
+                        <span class="info"><p class="proj-title">Title:</p>' + newWork[i].title + '</span>\
+                      <figcaption class="caption img-responsive">WEB Development and Design</figcaption>\
+                      </figure>\
+                    </div>\
+                    <div class="my_work_text item3">\
+                      <h4>WEB Development and design work</h4>\
+                      <br>\
+                      <p>It is starting with this course and this work on my portfolio</p>\
+                      <p>I love coding and creating solution for customers</p>\
+                      <p>Please go to my contact page to have information on how to reach me</p>\
+                    </div>\
+                </div>\
+                ');
+
+            };
+            if (i === 1) {
+                console.log("i = 1");
+                $("#workTech").append('\
+                <div class="col-xs-6 col-sm-3 col-md-3 over_boot">\
+                    <div class="my_work_image">\
+                      <figure>\
+                     <a href="#" class="work-img project_mgt_image img-responsive">\
+                          <img class="project_mgt_image img-responsive" src="' + thisWork[i] + '" alt="ProjMgt">\
+                          <span class="infoBlack"><p class="proj-title">Title:</p>' + newWork[i].title + '</span>\
+                      </a>\
+                       <figcaption class="caption img-responsive">Software development and intergation</figcaption>\
+                      </figure>\
+                    </div>\
+                    <div class="my_work_text item3">\
+                      <h4>Software development and intergation</h4>\
+                      <br>\
+                      <p>Coded and delivered software solutions since the beginng of my career</p>\
+                      <p>I have used different languages in a variety of platforms</p>\
+                      <p>Languages used: COBOL, RPGII, RPGIII, SQL, Visual Basic, SQR, EDL, Scripting</p>\
+                      <p>Worked with the following tools: Essbase, Hyperion Analyzer, RSIS, SSIS, Postman-CURL, SQL Server</p>\
+                      <p>Now using HTML5, CSS3, Javasccript, Jquery and more to come</p>\
+                      <p class="hidden">.</p>\
+                    </div>\
+                </div>\
+                ');
+            };
+            if (i === 2) {
+                console.log("i = 2");
+                $("#workTech").append('\
+                <div class="col-xs-6 col-sm-3 col-md-3 over_boot">\
+                    <div class="my_work_image">\
+                      <figure>\
+                      <a href="#" class="work-img project_mgt_image img-responsive">\
+                        <img class="project_mgt_image img-responsive" src="' + thisWork[i] + '" alt="ProjMgt">\
+                        <span class="info"><p class="proj-title">Title:</p>' + newWork[i].title + '</span>\
+                      </a>\
+                       <figcaption class="caption img-responsive">Database work</figcaption>\
+                      </figure>\
+                    </div>\
+                    <div class="my_work_text item1">\
+                      <h4>Working with different databases</h4>\
+                      <br>\
+                      <p>Used a variety of databases under different platforms: SQL Server, DB2, ORACLE, Cassandra, etc.</p>\
+                    </div>\
+                </div>\
+                ');
+            };
+            if (i === 3) {
+                console.log("i = 3");
+                $("#workTech").append('\
+                <div class="col-xs-6 col-sm-3 col-md-3 over_boot">\
+                    <div class="my_work_image">\
+                      <figure>\
+                      <a href="#" class="work-img project_mgt_image img-responsive">\
+                        <img class="project_mgt_image img-responsive" src="' + thisWork[i] + '" alt="ProjMgt">\
+                        <span class="info"><p class="proj-title">Title:</p>' + newWork[i].title + '</span>\
+                      </a>\
+                       <figcaption class="caption img-responsive">Project Management work</figcaption>\
+                      </figure>\
+                    </div>\
+                    <div class="my_work_text item1">\
+                      <h4>WEB Development and design work</h4>\
+                      <br>\
+                      <p>It is starting with this course and this work on my portfolio</p>\
+                      <p>I love coding and creating solution for customers</p>\
+                      <p>Please go to my contact page to have information on how to reach me</p>\
+                    </div>\
+                </div>\
+                ');
+             };
+            if (i === 4) {
+                console.log("i = 4");
+                $("#workIndustry").append('\
+                <div class="col-xs-6 col-sm-3 col-md-3 over_boot">\
+                    <div class="my_work_image">\
+                      <figure>\
+                      <a href="#" class="work-img project_mgt_image img-responsive">\
+                        <img class="project_mgt_image img-responsive" src="' + thisWork[i] + '" alt="Airline Industry">\
+                        <span class="info"><p class="proj-title">Title:</p>' + newWork[i].title + '</span>\
+                      </a>\
+                  <figcaption class="caption">Airline Industry Industry</figcaption>\
+                      </figure>\
+                    </div>\
+                    <div class="my_work_text item3">\
+                      <h4>The Airline industry work</h4>\
+                      <br>\
+                      <p>Worked in both passengers and cargo domains</p>\
+                      <p>Many contributions on the cargo side: implemented their new operation system - LYNX, </p>\
+                      <p>and CMR database and reporting. Participated in the creation of the SUBITO database and reporting tools</p>\
+                      <p>On the passenger side, implemented a new Revenue Maganement software and replace the hearth of the reservation with new software from an external vendor.</p>\
+                      <p>Other work at AC: implemented new HR, Payroll, Accounting PeopleSoft software packages replacing a BULL mainframe</p>\
+                      <p>Participated to the Canadian Airline integration project</p>\
+                    </div>\
+                </div>\
+                ');
+            };
+            if (i === 5) {
+                console.log("i = 5");
+                $("#workIndustry").append('\
+                <div class="col-xs-6 col-sm-3 col-md-3 over_boot">\
+                    <div class="my_work_image">\
+                      <figure>\
+                      <a href="#" class="work-img project_mgt_image img-responsive">\
+                        <img class="project_mgt_image img-responsive" src="' + thisWork[i] + '" alt="Banking">\
+                        <span class="info"><p class="proj-title">Title:</p>' + newWork[i].title + '</span>\
+                      </a>\
+                       <figcaption class="caption img-responsive">Banking and Finance Industry</figcaption>\
+                      </figure>\
+                    </div>\
+                    <div class="my_work_text item3">\
+                      <h4>Banking and Finance work</h4>\
+                      <br>\
+                      <p>Implemented and integrated many softwares and solutions in the banking, finance and brookerage domains</p>\
+                    </div>\
+                </div>\
+                ');
+            };
+            if (i === 6) {
+                console.log("i = 6");
+                $("#workIndustry").append('\
+                <div class="col-xs-6 col-sm-3 col-md-3 over_boot">\
+                    <div class="my_work_image">\
+                      <figure>\
+                      <a href="#" class="work-img project_mgt_image img-responsive">\
+                        <img class="project_mgt_image img-responsive" src="' + thisWork[i] + '" alt="Cabledistributors">\
+                        <span class="infoBlack"><p class="proj-title">Title:</p>' + newWork[i].title + '</span>\
+                      </a>\
+                       <figcaption class="caption img-responsive">Cabledistributors Industry</figcaption>\
+                      </figure>\
+                    </div>\
+                    <div class="my_work_text item2">\
+                      <h4>Cabledistribution work</h4>\
+                      <br>\
+                      <p>This was at the start of my career.</p>\
+                      <p>We built a new billing and accounts receivable systems for cable distributors</p>\
+                      <p>First on an IBM Series 1 computer in an old langage close to Assembler code.</p>\
+                      <p>Then we re-coded it using RPGII on an IBM System 34/36 computers</p>\
+                    </div>\
+                </div>\
+                ');
+            };
+            if (i === 7) {
+                console.log("i = 7");
+                $("#workIndustry").append('\
+                <div class="col-xs-6 col-sm-3 col-md-3 over_boot">\
+                    <div class="my_work_image">\
+                      <figure>\
+                      <a href="#" class="work-img project_mgt_image img-responsive">\
+                        <img class="project_mgt_image img-responsive" src="' + thisWork[i] + '" alt="Distribution">\
+                        <span class="info"><p class="proj-title">Title:</p>' + newWork[i].title + '</span>\
+                      </a>\
+                       <figcaption class="caption img-responsive">Distribution and Manufacturing Industry</figcaption>\
+                      </figure>\
+                    </div>\
+                    <div class="my_work_text item2">\
+                      <h4>Distribution and Manufacturing Work</h4>\
+                      <br>\
+                      <p>Build Distribution, Manufacturing, Ordering, Payables and custom applicatons for many companies</p>\
+                      <p>The package was parameter driven and could be adapted to almost all distributors</p>\
+                      <p>Was built on IBM System 36 and portable to System 38 and AS-400 computers</p>\
+                    </div>\
+                </div>\
+                ');
+             };
+  };  //  End of for loop
+
+
+// Add css rules to images found, add a special color to odd elements using modulus operator
+  var images = $("#mywork img");
+  console.log(images[0]);
+  console.log(images[1]);
+
+// Replace the for loop with the while conditionnal
+  var i = 0;
+  while (i < thisWork.length) {
+
+  // for (var i = 0; i < images.length; ++i) {
+    if(i%2 === 0){
+        $(images[i]).css("border", "2px solid DodgerBlue");
+    }
+    else {
+        $(images[i]).css("border", "2px solid salmon");
+    };  //  End of if statement
+    ++i;
+
+  };  // End of while statement
+
+  });

@@ -1,0 +1,167 @@
+<!-- This is a new section to use bootstrap column system to replace the code done earlier -->
+
+<div class="container-fluid work">
+  <div class="row" id="work">
+    <div class="col-md-4 col-xs-8">
+      <!-- <div> -->
+        <!-- <img class="imgAbout" src="img/Photo_Linked_pngpanda_V1.JPG" alt="photo of me"> -->
+      <!-- </div> -->
+      <div class="img-two">
+        <%= image_tag("Photo_Linked_pngpanda_V1.JPG", size: "400x250",
+          alt: "Edit Entry", class: "img-Yves img-responsive")%>
+      </div>
+          <%= image_tag("Old_Computer_png_V6,jpg", size: "400x250",
+      alt: "Edit Entry", class: "img-Yves img-responsive")%>
+
+    </div>
+
+    <div class="col-md-4 col-xs-8">
+      <div class="intro">
+        <h2>About myself...</h2>
+        <p>I'm an IT professional since over 30 years.
+        I like my actual work and now working towards new challenges and better life quality.
+        My new challenges are inline with the love I have with the IT domain I'm working in since many years.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xs-8">
+      <div class="skills">
+        <h2>Here's some of my skills</h2>
+          <ul id="skill-list">
+            <li>intelligent</li>
+            <li>logical</li>
+            <li>patient</li>
+            <li>determined</li>
+            <li>perseverant</li>
+            <li>analytical aptitude</li>
+            <li>innovative</li>
+            <li>hard working</li>
+            <li>passionate</li>
+          </ul>
+      </div>
+    </div>
+    </div>  <!-- End of row -->
+
+  <div class="row" id="work">
+    <div class="col-md-12 col-xs-12">
+      <div class="aboutPageText">
+        <h3>More about me on the personal side</h3>
+
+        <p>My passions in life are <a href="http://www.pgatour.com" target="_blank" title="Click to know my passion" id="golfInfo">golf</a>, <a href="http://www.pgatour.com" target="_blank" title="Click to know more about cycling" id="cyclingInfo">cycling</a>, <a href="http://www.saq.com" target="_blank" title="Sharing my wine passion" id="wineInfo">wine</a>, my family. My daughters are my biggest pride in my life.</p>
+        <p>I'm a father and husband and will always be....</p>
+        <p>My pleasure in life: spending time with my wife, golf, a nice dinner with my daughters and good friends, a nice bottle of wine, summer, drinks on a terrace, italian food, walking on the beach, a nice byke ride, warm wheather.....life in general</p>
+        <p>My principle values are honnesty, trust, humour, respect, generosity, open minded, justice, compassion, professionalism.</p>
+
+        <!-- Insert a modal to talk about my passions -->
+        <span data-placement="top" data-toggle="tooltip" title="More information">
+        <!--         <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Tooltip on top">My passions  &raquo;</button> -->
+        <button class="btn btn-primary but-modal" data-toggle="modal" id="butPassions">My passions</button>
+        </span>
+
+        <%= link_to "Open modal",  "butPassions", :class => "btn btn-primary but-modal", "data-toggle" => "modal" %>
+
+      <div class="careerGoalsButton">
+          <a class="btn btn-primary btn-sm" href="YL_Experience_Details.html" role="button" data-placement="top" data-toggle="tooltip" title="More info">My experience  &raquo;&raquo;</a>
+      </div>
+
+      <!-- Large modal -->
+      <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-Passions modal-content" data-backdrop="static" data-keyboard="false">
+            <div class="modalheader">
+              <h3 class="passionHeader">My main passions</h3> <!-- Nedd to be centered -->
+              <!-- <h4 class="cvdate">November 2015</h4><br> <! Date needs to float right -->
+              <!-- <div class="centerit modal-GoalsCloseButton"> -->
+            <div class="passionsCloseButton">
+                <button type="button" class="close cvexit" data-dismiss="modal" aria-label="Close" id="butPassionsClose" >
+                <span aria-hidden="true">&times;</span></button>
+                <!-- </button>x           -->
+          </div>
+        </div>
+          <p class="passionFamily">
+            My wife and daughters are the most precious in my life<br>
+            Golf comes after that<br>
+            Wine is a good complement to everything<br>
+            Cycling for a nice ride in the country and to keep in shape<br>
+            </p>
+          <!-- Content: need to be centered -->
+          <div class="modalbody">
+            <h2 class"cvresume">Golf</h2>
+            <p class="cvcontent">Season is always too short<br>
+              Summer is too short!!<br>
+              Love to play everywhere, trying different courses adds to the challenge.
+            <br>
+              Love competitions with friends, just for the fun of it, no bets or nothing.
+            <br>
+              Can't wait for the season to start!!
+            <br>
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--  End container ABOUT section-->
+
+    <!-- ***** Career Goals modal ***** -->
+    <!-- Small modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <!--     <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    -->
+      <div class="modal-dialog modal-sm">
+        <div class="modal-Goals modal-content" data-backdrop="static" data-keyboard="false">
+          <div class="modalheader">
+            <h3 class="cvheader">Yves Loiseau</h3> <!-- Nedd to be centered -->
+            <h4 class="cvdate">November 2016</h4><br> <!-- Date needs to float roght -->
+            <!-- <div class="centerit"> -->
+            <div class="goalsButton">
+              <button type="button" class="close cvexit" data-dismiss="modal" aria-label="Close" id="butGoalClose" >
+              <span aria-hidden="true">&times;</span></button>
+            </div>
+          </div>
+          <p class="cvadress">
+          8365 Pierre-Emmanuel<br>
+          Laval QC H7Y 2B2<br>
+          Telephone: 514-232-6356<br>
+          Email: yves.loiseau@videotron.ca<br>
+          </p>
+        <!-- Content: need to be centered -->
+          <div class="modalbody">
+            <h2 class"cvresume">Career Objectives</h2>
+            <p class="cvcontent">My first goal is now to work on Web Design and development projects<br>
+            Combining permanent or contractual jobs for companies or as a freelancer creating new web design and development for different customers.<br>
+            Management and coordination of IT solutions as well as system integration work would come as a secondary goal.<br>
+            <br>
+            Always seeking new challenges where I can use my analytical skills and my creativity. Proven track record of project execution within given timelines.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ***** My Resume imbedded Modal ***** -->
+    <!-- Large modal -->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
+      <div class="modal-dialog modal-sm">
+        <div class="resumeContent">
+          <div class="modalheader">
+            <h3 class="cvheader">Yves Loiseau</h3> <!-- Nedd to be centered -->
+            <h4 class="cvdate">January 2017</h4><br> <!-- Date needs to float roght -->
+            <!-- <div class="centeritImbed"> -->
+            <div class="resumeCloseImbedButton">
+              <button type="button" class="close cvexit" data-dismiss="modal" aria-label="Close" id="buttonCVImbedClose">
+              <span aria-hidden="true">&times;</span></button>
+            </div>
+          </div>
+          <!-- Content: need to be centered -->
+          <div class="modalbody" id="myresume">
+            <embed id="myresume" src="WEB-Documents/Yves Loiseau_CV-English_Test_for_WEB.pdf" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End col section -->
+</div> <!-- End container FAQ section  -->
+
